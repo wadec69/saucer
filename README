@@ -1,0 +1,5 @@
+This is a system in development, that will be designed so that a server 
+can be hosted on a remote host, and store multiple files. Upon request 
+by a client that may connect when it chooses to, it will send the 
+requested file to the client, as long as it is stored on the data 
+server.
