@@ -20,6 +20,7 @@ public class Logger {
     public void print(String out) {
         writer.println("[" + date() + "] " + out);
         writer.flush();
+        System.out.println("[" + date() + "] " + out);
     }
 
     private String date() {
