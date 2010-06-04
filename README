@@ -3,3 +3,8 @@ can be hosted on a remote host, and store multiple files. Upon request
 by a client that may connect when it chooses to, it will send the 
 requested file to the client, as long as it is stored on the data 
 server.
+
+>>>>>>>>>>>>>>>>>>>>>Updates>>>>>>>>>>>>>>>>>>>>>
+
+- updated to store connection data from each link temporarily, until the connection is closed
+- modular system to allow custom session types (i.e. normal, admin, upload, etc)
