@@ -11,12 +11,14 @@ import org.wadec.sauce.net.Link;
 public class ServerHost {
 
     private ServerSocket server;
+    private SauceServ sauce;
 
-    public ServerHost() throws IOException {
+    public ServerHost(SauceServ s) throws IOException {
         server = new ServerSocket(16254);
+        sauce = s;
     }
 
     public Link getNext() throws IOException {
-        return new Link(server.accept());
+        return new Link(server.accept(), sauce);
     }
 }

@@ -10,6 +10,6 @@ import org.wadec.sauce.SauceServ;
 public class Loader {
 
     public static void main(String[] args) throws IOException {
-        new SauceServ();
+        new SauceServ().initialize();
     }
 }
